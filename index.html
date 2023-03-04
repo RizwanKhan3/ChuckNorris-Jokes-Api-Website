@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="main">
+          <label for="category">Choose Category</label>
+          <select name="category" id="category" onchange="HandleChange()">
+                <option value="animal" selected>Animal</option>
+                <option value="career">Career</option>
+                <option value="celebrity">Celebrity</option>
+                <option value="dev">Dev</option>
+                <option value="explicit">Explicit</option>
+                <option value="fashion">Fashion</option>
+                <option value="food">Food</option>
+                <option value="history">History</option>
+                <option value="money">Money</option>
+                <option value="movie">Movie</option>
+                <option value="music">Music</option>
+                <option value="political">Political</option>
+                <option value="science">Science</option>
+                <option value="sport">Sport</option>
+                <option value="travel">Travel</option>
+            </select>
+            <button class="btn" id="fetchByCat">ByCategory</button>
+            <button class="btn" id="fetchData">Random</button>
+    </div>
+    <!-- "animal","career","celebrity","dev","explicit","fashion","food","history","money","movie","music","political","religion","science","sport","travel" -->
+
+    <div class="container" id="con"></div>
+  </body>
+  <script src="./js/app.js" async></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</html>
