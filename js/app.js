@@ -12,7 +12,7 @@ let btn = document.getElementById('fetchData')
 
 
 
-
+/////////////////////////
 const getRandom = async (url) => {
   console.log(url);
       try {
@@ -37,7 +37,7 @@ const getRandom = async (url) => {
       }
 }
 
-
+///////////////////////////////////////////
 const fetchData = () => {
       getRandom(randomUrl)  // Fetching data randomly
       btn.removeEventListener('click', fetchData)
@@ -47,12 +47,13 @@ const fetchData = () => {
 
 }
 btn.addEventListener('click', fetchData)
-
+///////////////////////////////////////////
 const HandleChange = () => {
       let defaultValue = selectionList.value || 'animal'
       cat_url = `https://api.chucknorris.io/jokes/random?category=${defaultValue}`
       
 }
+////////////////////////////////////////////////////
 const fetchDataByCat = () => {
       getRandom(cat_url ||defaultUrl) ///Fetching data by category 
   
