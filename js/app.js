@@ -14,7 +14,7 @@ let btn = document.getElementById('fetchData')
 
 /////////////////////////
 const getRandom = async (url) => {
-  console.log(url);
+
       try {
             const res = await axios.get(url) // Getting data from api
             const h1 = document.createElement('h1')   // creating h1 tag
